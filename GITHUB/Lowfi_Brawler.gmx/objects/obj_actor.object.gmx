@@ -161,7 +161,7 @@ move_hor = right - left;
 move_ver = down - up;
 
 if move_hor != 0
-    image_xscale = move_hor;
+    image_xscale = sign(move_hor);//Changing this to use sign() to minimize anomalies -Blood
 </string>
           </argument>
         </arguments>
