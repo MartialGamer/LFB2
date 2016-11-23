@@ -57,6 +57,7 @@ if hit = 1
 {
     instance_destroy();
     fx_create(x,y-sprite_height/2,spr_explode,.4);
+    
 }
 
 </string>
