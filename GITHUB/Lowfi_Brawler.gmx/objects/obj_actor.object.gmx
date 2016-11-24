@@ -33,6 +33,7 @@ state_create("Idle", state_player_idle);
 state_create("Run", state_player_run);
 state_create("Attack",state_player_attack);
 state_create("Attack2",state_player_attack2);
+state_create("Attack3",state_player_attack3);
 
 state_init("Run");
 </string>
@@ -49,21 +50,28 @@ state_init("Run");
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>obj_actor</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Controls Init
+            <string>/// Controls Init
 
 key_left  = vk_left;
 key_right = vk_right;
 key_up    = vk_up;
 key_down  = vk_down;
 
-key_attack = ord('X');
-key_special = ord('c');
+key_attack = ord("C");
+key_special = ord("X");
+
+move_hor = 0;
+move_ver = 0;
+
+
+combo_count = 0;
+
 
 </string>
           </argument>
@@ -87,6 +95,8 @@ key_special = ord('c');
             <kind>1</kind>
             <string>/// Stats Init
 
+mask_index = spr_mask_collision;
+
 movespeed = .25;
 
 hsp = 0;
@@ -98,8 +108,59 @@ vsp_max = .6;
 fric = .1;
 
 combo = 0;
-combo_chain = 2;
-combo_count = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Animation Vars
+circle_animation = 0;
+
+
+// How often run dust is created
+rundust_range = 10;
+rundust_timer = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Cleanup State Machine
+
+state_cleanup();
 </string>
           </argument>
         </arguments>
@@ -160,8 +221,6 @@ special = keyboard_check_pressed(key_special);
 move_hor = right - left;
 move_ver = down - up;
 
-if move_hor != 0
-    image_xscale = sign(move_hor);//Changing this to use sign() to minimize anomalies -Blood
 </string>
           </argument>
         </arguments>
@@ -210,6 +269,34 @@ state_execute();
 depth = -y;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_sprite_ext(spr_outline, circle_animation, x,y,1,1,0,c_white,.7);
+circle_animation +=.2;
+if circle_animation &gt; 5
+    circle_animation = 0;
+    
+draw_self();
 </string>
           </argument>
         </arguments>

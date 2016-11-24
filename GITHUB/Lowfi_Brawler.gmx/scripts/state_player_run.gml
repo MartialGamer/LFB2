@@ -1,13 +1,31 @@
 if state_timer == 0
 {
     state_debug();
-    sprite_index = spr_bimmy_run;
+    sprite_index = asset_get_index("spr_" + string(name)+ "_run");
     image_index = 0;
     image_speed = .2;
 }
 
+
+// Creates Running Dust Every 10-20 frames
+
+if rundust_timer mod rundust_range == 0 && state_timer > 3
+{
+    var inst = fx_create(x - (4 * move_hor),y+2 - (move_ver),spr_run_dust,.25);
+    inst.image_xscale = image_xscale;
+    inst.image_alpha = .8;
+    
+    rundust_range = irandom_range(10,20);
+    rundust_timer = 0;
+}
+rundust_timer += 1;
+
+    
 if move_hor == 0 && move_ver == 0
     state_switch("Idle");
+    
+if move_hor != 0
+    image_xscale = move_hor;
 
 var dir = point_direction(0,0,move_hor, move_ver);    
         
