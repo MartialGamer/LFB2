@@ -11,8 +11,8 @@ if state_timer == 0
 
 var dis = distance_to_object(obj_actor);
 
-//if dis < 20
-//      state_switch("Run");
+if dis < 20
+    state_switch("Run");
     
 if dis < 5
     state_switch("Attack");  
