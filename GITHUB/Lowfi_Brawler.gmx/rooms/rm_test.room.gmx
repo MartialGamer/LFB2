@@ -3,8 +3,8 @@
   <caption></caption>
   <width>160</width>
   <height>90</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -64,7 +64,7 @@
     <instance objName="obj_garbage" x="126" y="34" name="inst_F7737BDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="80" y="20" name="inst_B5946A66" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="164" y="60" name="inst_701BED6F" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dumpster" x="132" y="8" name="inst_59046267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dumpster" x="144" y="32" name="inst_59046267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_garbage_bin" x="122" y="28" name="inst_B1AA7182" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_garbage_bin" x="6" y="46" name="inst_F3A3EC1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrel" x="56" y="48" name="inst_64B2A117" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,10 +72,9 @@
     <instance objName="obj_rat_spawner" x="-2" y="46" name="inst_0203FD67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rat_spawner" x="-2" y="72" name="inst_762FA41B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_poster" x="12" y="2" name="inst_1AD84E4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_light" x="8" y="-48" name="inst_2FFA1F82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_garbage_bin" x="40" y="36" name="inst_C91469A7" locked="0" code="on_fire = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrel" x="88" y="36" name="inst_078C03D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_test" x="96" y="56" name="inst_DBB60693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_light" x="-8" y="-28" name="inst_AD400BBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_concrete" x="48" y="40" w="8" h="8" xo="0" yo="0" id="10000038" name="inst_56557F28" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

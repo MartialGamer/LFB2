@@ -41,7 +41,7 @@
         <sprite>sprites\spr_wall_brick</sprite>
         <sprite>sprites\spr_wall_stone</sprite>
       </sprites>
-      <sprites name="Props">
+      <sprites name="_Props">
         <sprite>sprites\spr_barrel</sprite>
         <sprite>sprites\obj_prop_mask</sprite>
         <sprite>sprites\spr_garbage_bin</sprite>
@@ -111,6 +111,7 @@
           <script>scripts\state_enemy_attack.gml</script>
           <script>scripts\state_enemy_attack2.gml</script>
           <script>scripts\state_enemy_attack3.gml</script>
+          <script>scripts\check_enemy_attack.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -137,12 +138,18 @@
       </objects>
     </objects>
     <objects name="_Controllers">
+      <objects name="_Menus">
+        <objects name="_MainMenu">
+          <object>objects\obj_menu</object>
+          <object>objects\obj_settings</object>
+        </objects>
+        <objects name="_PauseMenu">
+          <object>objects\obj_pause</object>
+        </objects>
+      </objects>
       <object>objects\obj_display_manager</object>
       <object>objects\obj_game</object>
       <object>objects\obj_light</object>
-      <objects name="_MainMenu">
-        <object>objects\obj_menu</object>
-      </objects>
     </objects>
     <objects name="_Map">
       <objects name="_Parents">
@@ -166,6 +173,7 @@
   <rooms name="rooms">
     <room>rooms\_rm_init</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_menu_settings</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>

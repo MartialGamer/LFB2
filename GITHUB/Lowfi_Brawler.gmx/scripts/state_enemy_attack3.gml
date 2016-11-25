@@ -21,12 +21,12 @@ if image_index  >= 3 && image_index <= 5
     }
 }
 
-var dis = distance_to_object(obj_actor); //Placeholder for random selection later on
+check_enemy_attack();
 
 if image_index == image_number -1
     state_switch("Idle");
 
-if dis < 5 && state_timer > 10
+if attack && state_timer > 10
     combo = true;
 
 if image_index == image_number -1

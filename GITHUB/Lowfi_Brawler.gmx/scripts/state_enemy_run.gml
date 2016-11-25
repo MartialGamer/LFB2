@@ -51,7 +51,9 @@ collision_vertical();
 
 y += vsp;
 
-if distance_to_object(obj_actor) < 5
+check_enemy_attack();
+
+if attack
     state_switch("Attack");    
 
 

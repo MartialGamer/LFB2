@@ -22,9 +22,9 @@ if image_index  >= 1 && image_index <= 3
     }
 }
 
-var dis = distance_to_object(obj_actor);
+check_enemy_attack();
 
-if dis <= 5          //Check if target is still in range
+if attack
     combo = true;
 
 if image_index == image_number -1

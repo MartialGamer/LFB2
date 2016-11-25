@@ -51,20 +51,20 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_menu" x="80" y="32" name="inst_B8460725" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage_bin" x="42" y="32" name="inst_015CC10A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage_bin" x="128" y="32" name="inst_BAA14F7E" locked="0" code="on_fire = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage_bin" x="26" y="32" name="inst_0DEB8386" locked="0" code="on_fire = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dumpster" x="74" y="32" name="inst_CD1B3AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dumpster" x="152" y="32" name="inst_917DEDD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage" x="58" y="37" name="inst_ED96730E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage" x="50" y="32" name="inst_6966424A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage" x="60" y="32" name="inst_9888A9A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage" x="90" y="36" name="inst_373D7351" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage" x="123" y="37" name="inst_F872CAE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_garbage" x="114" y="32" name="inst_139B336D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rat_spawner" x="0" y="64" name="inst_2AD5D5D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_poster" x="8" y="3" name="inst_190C3E11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_settings" x="80" y="32" name="inst_107A5B80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage_bin" x="42" y="32" name="inst_11C54095" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage_bin" x="128" y="32" name="inst_3B628E38" locked="0" code="on_fire = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage_bin" x="26" y="32" name="inst_83C6E5C5" locked="0" code="on_fire = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dumpster" x="74" y="32" name="inst_1DF6F65B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dumpster" x="152" y="32" name="inst_28A607AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage" x="58" y="37" name="inst_F6E50211" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage" x="50" y="32" name="inst_C6B97342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage" x="60" y="32" name="inst_7E52507D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage" x="90" y="36" name="inst_9BED09FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage" x="123" y="37" name="inst_7FEB2E0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_garbage" x="114" y="32" name="inst_183F01A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rat_spawner" x="0" y="64" name="inst_13B28983" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_poster" x="8" y="3" name="inst_3873E4AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="spr_graffiti" x="95" y="2" w="48" h="19" xo="0" yo="0" id="10000580" name="inst_68506EF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

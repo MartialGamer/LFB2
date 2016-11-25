@@ -21,12 +21,13 @@ if image_index  >= 0 && image_index <= 1
     }
 }
 
-var dis = distance_to_object(obj_actor);
 
 if image_index == image_number -1
     state_switch("Idle");
 
-if dis < 5          //Check if target is still in range
+check_enemy_attack();    
+
+if attack
     combo = true;
 
 if image_index == image_number -1
