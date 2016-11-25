@@ -25,7 +25,7 @@ if image_index  >= 3 && image_index <= 5
 if image_index == image_number -1
     state_switch("Idle");
 
-if attack
+if attack && state_timer > 10
     combo = true;
 
 if image_index == image_number -1

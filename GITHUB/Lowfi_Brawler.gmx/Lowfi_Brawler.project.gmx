@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_hit</sound>
+    <sound>sound\snd_explode</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="_Actors">
       <sprites name="Bimmy">
@@ -14,6 +17,7 @@
         <sprite>sprites\spr_bimmy_attack2</sprite>
         <sprite>sprites\spr_bimmy_attack3</sprite>
         <sprite>sprites\spr_bimmy_hit</sprite>
+        <sprite>sprites\spr_bimmy_roll</sprite>
       </sprites>
       <sprites name="P2">
         <sprite>sprites\spr_p2_idle</sprite>
@@ -30,7 +34,6 @@
         <sprite>sprites\spr_hitbox_attack2</sprite>
         <sprite>sprites\spr_hitbox_attack3</sprite>
       </sprites>
-      <sprite>sprites\spr_missingo</sprite>
       <sprite>sprites\spr_outline</sprite>
     </sprites>
     <sprites name="_Environment">
@@ -41,20 +44,37 @@
       <sprites name="Props">
         <sprite>sprites\spr_barrel</sprite>
         <sprite>sprites\obj_prop_mask</sprite>
+        <sprite>sprites\spr_garbage_bin</sprite>
         <sprite>sprites\spr_garbage</sprite>
         <sprite>sprites\spr_garbage_fire</sprite>
+        <sprite>sprites\spr_fence</sprite>
+        <sprite>sprites\spr_dumpster</sprite>
+        <sprite>sprites\spr_rat</sprite>
+        <sprite>sprites\spr_poster</sprite>
+        <sprite>sprites\spr_streetlight</sprite>
       </sprites>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\spr_explode</sprite>
       <sprite>sprites\spr_dust</sprite>
       <sprite>sprites\spr_run_dust</sprite>
+      <sprite>sprites\spr_fx_punch</sprite>
+      <sprite>sprites\spr_light</sprite>
+    </sprites>
+    <sprites name="System">
+      <sprites name="Font">
+        <sprite>sprites\spr_font</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="_Tiles">
-      <background>background\tile_concrete</background>
       <background>background\tile_smoot_concrete</background>
+      <background>background\tile_brick</background>
+    </backgrounds>
+    <backgrounds name="_Tilesets">
+      <background>background\spr_graffiti</background>
+      <background>background\tile_concrete</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -81,6 +101,9 @@
           <script>scripts\state_player_attack2.gml</script>
           <script>scripts\state_player_attack3.gml</script>
           <script>scripts\check_attack.gml</script>
+          <scripts name="_Specials">
+            <script>scripts\state_player_special_bimmy.gml</script>
+          </scripts>
         </scripts>
       </scripts>
     </scripts>
@@ -90,6 +113,7 @@
     </scripts>
     <scripts name="_Other">
       <script>scripts\sec.gml</script>
+      <script>scripts\approach.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -102,6 +126,10 @@
     <objects name="_Controllers">
       <object>objects\obj_display_manager</object>
       <object>objects\obj_game</object>
+      <object>objects\obj_light</object>
+      <objects name="_MainMenu">
+        <object>objects\obj_menu</object>
+      </objects>
     </objects>
     <objects name="_Map">
       <objects name="_Parents">
@@ -110,13 +138,21 @@
       </objects>
       <objects name="_Props">
         <object>objects\obj_barrel</object>
+        <object>objects\obj_garbage_bin</object>
         <object>objects\obj_garbage</object>
+        <object>objects\obj_fence</object>
+        <object>objects\obj_dumpster</object>
+        <object>objects\obj_rat_spawner</object>
+        <object>objects\obj_rat</object>
+        <object>objects\obj_poster</object>
+        <object>objects\obj_streetlight</object>
       </objects>
     </objects>
     <object>objects\obj_fx</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\_rm_init</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
