@@ -61,6 +61,11 @@
       <sprite>sprites\spr_fx_punch</sprite>
       <sprite>sprites\spr_light</sprite>
     </sprites>
+    <sprites name="System">
+      <sprites name="Font">
+        <sprite>sprites\spr_font</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="_Tiles">
@@ -122,6 +127,9 @@
       <object>objects\obj_display_manager</object>
       <object>objects\obj_game</object>
       <object>objects\obj_light</object>
+      <objects name="_MainMenu">
+        <object>objects\obj_menu</object>
+      </objects>
     </objects>
     <objects name="_Map">
       <objects name="_Parents">
@@ -144,6 +152,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\_rm_init</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
