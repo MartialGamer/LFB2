@@ -28,6 +28,15 @@
             <string>event_inherited();
 
 name = "bimmy";
+
+state_create("Special",state_player_special_bimmy)//asset_get_index("state_player_special" + string(name)));
+roll_frames = 25;
+roll_speed = .2;
+roll_fric = .05;
+
+
+hsp_roll_max = 1.4;
+vsp_roll_max = 1.1;
 </string>
           </argument>
         </arguments>

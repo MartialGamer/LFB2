@@ -53,7 +53,13 @@
 
 with instance_place(x,y,obj_prop)
 {
-        hit = 1;
+        if combo_count != other.combo_count
+        {
+            var _inst = fx_create(x,y-5,spr_fx_punch,.5);
+            _inst.depth -= 10;
+            hit = 1;
+            combo_count = other.combo_count;
+        }
 }
 
 instance_destroy();

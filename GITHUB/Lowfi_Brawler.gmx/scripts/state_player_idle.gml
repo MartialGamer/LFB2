@@ -14,3 +14,6 @@ if move_hor != 0 or move_ver != 0
     
 check_attack();
 
+if special
+    state_switch("Special")
+

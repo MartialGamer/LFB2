@@ -14,6 +14,7 @@
         <sprite>sprites\spr_bimmy_attack2</sprite>
         <sprite>sprites\spr_bimmy_attack3</sprite>
         <sprite>sprites\spr_bimmy_hit</sprite>
+        <sprite>sprites\spr_bimmy_roll</sprite>
       </sprites>
       <sprites name="P2">
         <sprite>sprites\spr_p2_idle</sprite>
@@ -41,20 +42,27 @@
       <sprites name="Props">
         <sprite>sprites\spr_barrel</sprite>
         <sprite>sprites\obj_prop_mask</sprite>
+        <sprite>sprites\spr_garbage_bin</sprite>
         <sprite>sprites\spr_garbage</sprite>
         <sprite>sprites\spr_garbage_fire</sprite>
+        <sprite>sprites\spr_fence</sprite>
+        <sprite>sprites\spr_dumpster</sprite>
       </sprites>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\spr_explode</sprite>
       <sprite>sprites\spr_dust</sprite>
       <sprite>sprites\spr_run_dust</sprite>
+      <sprite>sprites\spr_fx_punch</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="_Tiles">
       <background>background\tile_concrete</background>
       <background>background\tile_smoot_concrete</background>
+    </backgrounds>
+    <backgrounds name="_Tilesets">
+      <background>background\spr_graffiti</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -81,6 +89,9 @@
           <script>scripts\state_player_attack2.gml</script>
           <script>scripts\state_player_attack3.gml</script>
           <script>scripts\check_attack.gml</script>
+          <scripts name="_Specials">
+            <script>scripts\state_player_special_bimmy.gml</script>
+          </scripts>
         </scripts>
       </scripts>
     </scripts>
@@ -90,6 +101,7 @@
     </scripts>
     <scripts name="_Other">
       <script>scripts\sec.gml</script>
+      <script>scripts\approach.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -110,7 +122,10 @@
       </objects>
       <objects name="_Props">
         <object>objects\obj_barrel</object>
+        <object>objects\obj_garbage_bin</object>
         <object>objects\obj_garbage</object>
+        <object>objects\obj_fence</object>
+        <object>objects\obj_dumpster</object>
       </objects>
     </objects>
     <object>objects\obj_fx</object>
