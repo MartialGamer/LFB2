@@ -143,9 +143,6 @@
           <object>objects\obj_menu</object>
           <object>objects\obj_settings</object>
         </objects>
-        <objects name="_PauseMenu">
-          <object>objects\obj_pause</object>
-        </objects>
       </objects>
       <object>objects\obj_display_manager</object>
       <object>objects\obj_game</object>

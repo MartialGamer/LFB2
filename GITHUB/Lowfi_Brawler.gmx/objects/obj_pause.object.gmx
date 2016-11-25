@@ -102,7 +102,7 @@ alarm[0] = 1 * room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(0.5)
+            <string>draw_set_alpha(0.8)
 draw_set_color(c_black)
 draw_rectangle(0, 0, room_width, room_height,false)
 draw_set_color(-1)
@@ -111,6 +111,12 @@ draw_set_alpha(1)
 draw_set_font(global.font)
 draw_set_color(c_white)
 draw_text(room_width / 2, room_height / 2, "Paused");
+var width = surface_get_width(application_surface)
+var height = surface_get_height(application_surface)
+screenshot = sprite_create_from_surface(application_surface,0,0,width, height,0,0,0,0)
+
+draw_sprite(screenshot, 0, view_wview[0] / 2, view_hview[0] / 2)
+
 </string>
           </argument>
         </arguments>

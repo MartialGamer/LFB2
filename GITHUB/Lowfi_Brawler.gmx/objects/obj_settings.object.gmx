@@ -64,7 +64,7 @@ draw_set_valign(fa_middle)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(0.8)
+            <string>draw_set_alpha(0.5)
 draw_set_color(c_black)
 draw_rectangle(x-32,y-32,x+32,y+64,false)
 draw_set_color(-1)
