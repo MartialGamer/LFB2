@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_hit</sound>
+    <sound>sound\snd_explode</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="_Actors">
       <sprites name="Bimmy">
@@ -31,7 +34,6 @@
         <sprite>sprites\spr_hitbox_attack2</sprite>
         <sprite>sprites\spr_hitbox_attack3</sprite>
       </sprites>
-      <sprite>sprites\spr_missingo</sprite>
       <sprite>sprites\spr_outline</sprite>
     </sprites>
     <sprites name="_Environment">
@@ -47,6 +49,9 @@
         <sprite>sprites\spr_garbage_fire</sprite>
         <sprite>sprites\spr_fence</sprite>
         <sprite>sprites\spr_dumpster</sprite>
+        <sprite>sprites\spr_rat</sprite>
+        <sprite>sprites\spr_poster</sprite>
+        <sprite>sprites\spr_streetlight</sprite>
       </sprites>
     </sprites>
     <sprites name="Effects">
@@ -54,15 +59,17 @@
       <sprite>sprites\spr_dust</sprite>
       <sprite>sprites\spr_run_dust</sprite>
       <sprite>sprites\spr_fx_punch</sprite>
+      <sprite>sprites\spr_light</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="_Tiles">
-      <background>background\tile_concrete</background>
       <background>background\tile_smoot_concrete</background>
+      <background>background\tile_brick</background>
     </backgrounds>
     <backgrounds name="_Tilesets">
       <background>background\spr_graffiti</background>
+      <background>background\tile_concrete</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -114,6 +121,7 @@
     <objects name="_Controllers">
       <object>objects\obj_display_manager</object>
       <object>objects\obj_game</object>
+      <object>objects\obj_light</object>
     </objects>
     <objects name="_Map">
       <objects name="_Parents">
@@ -126,6 +134,10 @@
         <object>objects\obj_garbage</object>
         <object>objects\obj_fence</object>
         <object>objects\obj_dumpster</object>
+        <object>objects\obj_rat_spawner</object>
+        <object>objects\obj_rat</object>
+        <object>objects\obj_poster</object>
+        <object>objects\obj_streetlight</object>
       </objects>
     </objects>
     <object>objects\obj_fx</object>
