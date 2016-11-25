@@ -105,6 +105,13 @@
             <script>scripts\state_player_special_bimmy.gml</script>
           </scripts>
         </scripts>
+        <scripts name="_Enemy">
+          <script>scripts\state_enemy_idle.gml</script>
+          <script>scripts\state_enemy_run.gml</script>
+          <script>scripts\state_enemy_attack.gml</script>
+          <script>scripts\state_enemy_attack2.gml</script>
+          <script>scripts\state_enemy_attack3.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="_Collisions">
@@ -118,10 +125,16 @@
   </scripts>
   <objects name="objects">
     <objects name="_Actors">
-      <object>objects\obj_actor</object>
-      <object>objects\obj_hitbox_attack</object>
-      <object>objects\obj_bimmy</object>
-      <object>objects\obj_p2</object>
+      <objects name="_Player">
+        <object>objects\obj_actor</object>
+        <object>objects\obj_hitbox_attack</object>
+        <object>objects\obj_p2</object>
+        <object>objects\obj_bimmy</object>
+      </objects>
+      <objects name="_Enemy">
+        <object>objects\obj_actor_ai</object>
+        <object>objects\obj_enemy_test</object>
+      </objects>
     </objects>
     <objects name="_Controllers">
       <object>objects\obj_display_manager</object>
