@@ -7,11 +7,6 @@ if state_timer == 0
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/MartialGamer/master
 if image_index  >= 0 && image_index <= 1
 { 
     with instance_create(x,y,obj_hitbox_attack)
@@ -29,8 +24,7 @@ if state_timer > spin_frames                 //Placeholder until timer has been 
 var dir = point_direction(0,0,move_hor, move_ver);
 
 //show_debug_message(string(move_hor) + " " + string(move_ver));
-<<<<<<< HEAD
-=======
+
 if state_timer > spin_frames                 //Placeholder until timer has been set up
     state_switch("Idle");
 
@@ -46,9 +40,6 @@ if dir_timer == 0 {
 var dir = point_direction(0,0,move_hor, move_ver);
 
 show_debug_message(string(move_hor) + " " + string(move_ver));
->>>>>>> refs/remotes/MartialGamer/master
-=======
->>>>>>> refs/remotes/MartialGamer/master
 
 if move_hor != 0 or move_ver != 0
 {
