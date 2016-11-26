@@ -54,7 +54,6 @@
     <instance objName="obj_solid" x="-2" y="62" name="inst_68F96BD6" locked="0" code="" scaleX="0.555555582046509" scaleY="8.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="40" y="94" name="inst_91C155DF" locked="0" code="" scaleX="14.375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="119" y="94" name="inst_8D4E9053" locked="0" code="" scaleX="14.375" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bimmy" x="24" y="50" name="inst_2D5EB903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrel" x="92" y="32" name="inst_297E3E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="16" y="36" name="inst_B4E02A84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="64" y="36" name="inst_136FD4D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -75,6 +74,7 @@
     <instance objName="obj_garbage_bin" x="40" y="36" name="inst_C91469A7" locked="0" code="on_fire = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrel" x="88" y="36" name="inst_078C03D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="-8" y="-28" name="inst_AD400BBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_test_special_spin" x="88" y="60" name="inst_890266DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_concrete" x="48" y="40" w="8" h="8" xo="0" yo="0" id="10000038" name="inst_56557F28" depth="5" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

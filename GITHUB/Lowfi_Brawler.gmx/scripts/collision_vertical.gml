@@ -4,4 +4,3 @@ if place_meeting(x, y + vsp, obj_solid)
         y += sign(vsp);
     vsp = 0;    
 }
-        

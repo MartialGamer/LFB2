@@ -70,6 +70,8 @@ vsp_max = .6;
 
 fric = .1;
 
+attack = false;
+
 combo = 0;
 
 combo_count = 0;

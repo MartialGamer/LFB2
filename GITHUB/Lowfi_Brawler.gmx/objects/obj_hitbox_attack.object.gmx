@@ -53,6 +53,7 @@
             <string>with obj_prop
     mask_index = sprite_index;
 
+
 with instance_place(x,y,obj_prop)
 {
         if combo_count != other.combo_count
