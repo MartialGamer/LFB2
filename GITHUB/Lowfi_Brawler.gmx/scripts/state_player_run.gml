@@ -4,6 +4,7 @@ if state_timer == 0
     sprite_index = asset_get_index("spr_" + string(name)+ "_run");
     image_index = 0;
     image_speed = .2;
+
 }
 
 
@@ -57,5 +58,5 @@ collision_vertical();
 y += vsp;
 
 check_attack();
-
-
+if special
+    state_switch("Special");
