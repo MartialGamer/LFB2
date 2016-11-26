@@ -150,15 +150,15 @@ for (i=1; i&lt;= menuText[0]; i+=1)
             <kind>1</kind>
             <string>switch(menuSelected) {
     case 1: // Start Game
-      room_goto(rm_test);
+      room_goto(rm_test)
     break;
     
     case 2: // Options
-      room_goto(rm_menu_settings);
+      show_message("Options");
     break;
 
     case 3: // Exit Game
-      game_end();
+      show_message("Exit Game");
     break;
   }
 

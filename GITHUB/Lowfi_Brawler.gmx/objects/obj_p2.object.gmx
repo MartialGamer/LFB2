@@ -28,7 +28,6 @@
             <string>event_inherited();
 
 name = "p2";
-state_create("Special",state_player_special_p2)//asset_get_index("state_player_special" + string(name)));
 </string>
           </argument>
         </arguments>

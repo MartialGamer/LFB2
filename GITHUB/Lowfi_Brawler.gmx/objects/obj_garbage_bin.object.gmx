@@ -30,7 +30,7 @@ on_fire = 0;
 
 fire_speed= .25;
 
-
+hp = 4;
 </string>
           </argument>
         </arguments>

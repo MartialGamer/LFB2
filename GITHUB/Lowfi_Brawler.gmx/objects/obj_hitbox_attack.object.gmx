@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>show_hitbox = 0;
+
+
 </string>
           </argument>
         </arguments>
@@ -51,11 +53,16 @@
             <string>with obj_prop
     mask_index = sprite_index;
 
+
 with instance_place(x,y,obj_prop)
 {
         if combo_count != other.combo_count
         {
             var _inst = fx_create(x,y-5,spr_fx_punch,.5);
+            //play sound on collision with a collidable object
+            hit = audio_play_sound(snd_hit,10,false)
+            audio_sound_pitch(hit,random_range(1,1.2))
+            //
             _inst.depth -= 10;
             hit = 1;
             combo_count = other.combo_count;
