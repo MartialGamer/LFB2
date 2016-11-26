@@ -36,7 +36,7 @@
         <sprite>sprites\spr_hitbox_attack4</sprite>
       </sprites>
       <sprite>sprites\spr_outline</sprite>
-      <sprite>sprites\spr_special_spin</sprite>
+      <sprite>sprites\spr_special_placeholder</sprite>
     </sprites>
     <sprites name="_Environment">
       <sprites name="_Walls">
@@ -106,6 +106,8 @@
           <scripts name="_Specials">
             <script>scripts\state_player_special_bimmy.gml</script>
             <script>scripts\state_player_special_spin.gml</script>
+            <script>scripts\state_player_special_dodge.gml</script>
+            <script>scripts\state_player_special_lunge.gml</script>
           </scripts>
         </scripts>
         <scripts name="_Enemy">
@@ -133,8 +135,8 @@
         <object>objects\obj_actor</object>
         <object>objects\obj_hitbox_attack</object>
         <object>objects\obj_p2</object>
-        <object>objects\obj_test_special_spin</object>
         <object>objects\obj_bimmy</object>
+        <object>objects\obj_special_tester</object>
       </objects>
       <objects name="_Enemy">
         <object>objects\obj_actor_ai</object>
