@@ -65,7 +65,7 @@ if (surface_exists(surf)) {
 
     // The following three lines set the 'dark' overlay
     draw_set_color(c_black);
-    draw_set_alpha(0.5);
+    draw_set_alpha(0.2);
     draw_rectangle(0, 0, room_width, room_height, 0);
 
     // Setting the blend mode to 'subtract' is what allows us to "cut holes" out of the overlay
@@ -76,10 +76,11 @@ if (surface_exists(surf)) {
     // Note that I add randomization to the position and radius to mimic a flicker effect
     with (obj_garbage_bin)
     if on_fire
-        //draw_circle(x , y, 8 + random_range(-1, 1), false);
+        draw_circle(x , y, 16 + random_range(-1, 1), false);
         
-        draw_ellipse(x-10-random(1),y-10-random(1),x+8+random(1),y+8+random(1),false)
-   
+    with (obj_streetlight)
+    
+        draw_circle(x , y+8, 16 + random_range(-1, 1), false);
       /*      
     with (oParticleLantern)
         if (image_xscale &gt; 0.25)
@@ -149,7 +150,6 @@ if (surface_exists(surf))
 // Be sure to use views, even if it isn't necessary for your game
 // This trick bypasses an issue with resizing the game window
 // DX requires that surfaces be destroyed when resizing
-draw_set_circle_precision(8)
 if (!surface_exists(surf)) {
     surf = surface_create(room_width, room_height);
 } else {
