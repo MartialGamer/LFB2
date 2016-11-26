@@ -1,7 +1,7 @@
 if state_timer == 0
 {
     state_debug();
-    sprite_index = asset_get_index("spr_special_spin");
+    sprite_index = asset_get_index("spr_special_placeholder");
     image_index = 0;
     image_speed = .25;
 }

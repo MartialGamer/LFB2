@@ -29,13 +29,13 @@
 
 name = "bimmy";
 
-state_create("Special", state_player_special_spin);
-spin_speed = .05;
-spin_fric = .025;
-spin_frames = 50;
+state_create("Special", state_player_special_dodge);
+dodge_speed = .2;
+dodge_fric = .01;
+dodge_frames = 25;
 
-hsp_spin_max = .2;
-vsp_spin_max = .2;
+hsp_dodge_max = .2;
+vsp_dodge_max = .2;
 </string>
           </argument>
         </arguments>

@@ -29,13 +29,37 @@
 
 name = "bimmy";
 
-state_create("Special", state_player_special_spin);
-spin_speed = .05;
-spin_fric = .025;
-spin_frames = 50;
+state_create("Special",state_player_special_dodge)//asset_get_index("state_player_special" + string(name)));
+state_create("Special2", state_player_special_lunge)
+//Roll
+roll_frames = 25;
+roll_speed = .2;
+roll_fric = .05;
 
-hsp_spin_max = .2;
-vsp_spin_max = .2;
+hsp_roll_max = 1.4;
+vsp_roll_max = 1.1;
+
+//Spin
+spin_frames = 25;
+spin_speed = .1;
+spin_fric = .05;
+
+hsp_spin_max = 1.4;
+vsp_spin_max = 1.1;
+
+//Dodge
+dodge_frames = 25;
+dodge_speed = .2;
+dodge_fric = .05;
+
+hsp_dodge_max = 1.4;
+
+//Lunge
+lunge_frames = 25;
+lunge_speed = .4;
+lunge_fric = .05;
+
+hsp_lunge_max = 1.4;
 </string>
           </argument>
         </arguments>
