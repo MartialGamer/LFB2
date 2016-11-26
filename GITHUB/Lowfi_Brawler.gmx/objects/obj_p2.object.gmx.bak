@@ -27,20 +27,8 @@
             <kind>1</kind>
             <string>event_inherited();
 
-name = "bimmy";
-
-state_create("Special", state_player_special_spin);
-spin_speed = .05;
-spin_fric = .025;
-spin_frames = 50;
-
-<<<<<<< HEAD
-hsp_spin_max = .2;
-vsp_spin_max = .2;
-=======
-hsp_spin_max = .1;
-vsp_spin_max = .1;
->>>>>>> refs/remotes/MartialGamer/master
+name = "p2";
+state_create("Special",state_player_special_p2)//asset_get_index("state_player_special" + string(name)));
 </string>
           </argument>
         </arguments>
