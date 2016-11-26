@@ -35,11 +35,17 @@ spin_fric = .025;
 spin_frames = 50;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 hsp_spin_max = .2;
 vsp_spin_max = .2;
 =======
 hsp_spin_max = .1;
 vsp_spin_max = .1;
+>>>>>>> refs/remotes/MartialGamer/master
+=======
+
+hsp_spin_max = .2;
+vsp_spin_max = .2;
 >>>>>>> refs/remotes/MartialGamer/master
 </string>
           </argument>
