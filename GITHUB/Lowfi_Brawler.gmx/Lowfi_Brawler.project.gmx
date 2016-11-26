@@ -33,6 +33,7 @@
         <sprite>sprites\spr_hitbox_attack</sprite>
         <sprite>sprites\spr_hitbox_attack2</sprite>
         <sprite>sprites\spr_hitbox_attack3</sprite>
+        <sprite>sprites\spr_hitbox_attack4</sprite>
       </sprites>
       <sprite>sprites\spr_outline</sprite>
       <sprite>sprites\spr_special_spin</sprite>
