@@ -108,6 +108,9 @@
             <script>scripts\state_player_special_spin.gml</script>
             <script>scripts\state_player_special_dodge.gml</script>
             <script>scripts\state_player_special_lunge.gml</script>
+            <script>scripts\chance.gml</script>
+            <script>scripts\state_player_special_other.gml</script>
+            <script>scripts\state_player_special_p2.gml</script>
           </scripts>
         </scripts>
         <scripts name="_Enemy">
