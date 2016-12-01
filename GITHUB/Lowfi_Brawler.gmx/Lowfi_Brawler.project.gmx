@@ -3,7 +3,10 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <datafiles number="1" name="datafiles"/>
+  <NewExtensions>
+    <extension index="0">extensions\RecoloringShader</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_hit</sound>
     <sound>sound\snd_explode</sound>
@@ -34,6 +37,9 @@
         <sprite>sprites\spr_hitbox_attack2</sprite>
         <sprite>sprites\spr_hitbox_attack3</sprite>
         <sprite>sprites\spr_hitbox_attack4</sprite>
+      </sprites>
+      <sprites name="_Palettes">
+        <sprite>sprites\palette_bimmy</sprite>
       </sprites>
       <sprite>sprites\spr_outline</sprite>
       <sprite>sprites\spr_special_placeholder</sprite>
@@ -131,7 +137,27 @@
       <script>scripts\sec.gml</script>
       <script>scripts\approach.gml</script>
     </scripts>
+    <scripts name="shaderScripts">
+      <scripts name="paletteObj">
+        <script>scripts\init_myPalette.gml</script>
+        <script>scripts\debug_myPalette.gml</script>
+      </scripts>
+      <scripts name="playerObj">
+        <script>scripts\syncPalette.gml</script>
+        <script>scripts\shaderOn.gml</script>
+        <script>scripts\shaderOff.gml</script>
+        <script>scripts\updateColor.gml</script>
+        <script>scripts\selectColor.gml</script>
+      </scripts>
+      <scripts name="AutoCall">
+        <script>scripts\passToShader.gml</script>
+      </scripts>
+      <script>scripts\shaderScripts_README.gml</script>
+    </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_recolor.shader</shader>
+  </shaders>
   <objects name="objects">
     <objects name="_Actors">
       <objects name="_Player">
@@ -156,6 +182,7 @@
       <object>objects\obj_display_manager</object>
       <object>objects\obj_game</object>
       <object>objects\obj_light</object>
+      <object>objects\obj_palette_bimmy</object>
     </objects>
     <objects name="_Map">
       <objects name="_Parents">
